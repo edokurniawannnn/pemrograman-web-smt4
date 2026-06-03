@@ -1,10 +1,9 @@
 <?php
-include('cobaIncReq.php');
-salam();
+$nama = "Edo Kurniawan";
+echo ("<br> Hallo Nama Saya Adalah " . $nama);
 
-include('cobaIncReq.php');
-echo ("<br>------ Batas Include ------");
-
-require('cobaIncReq.php');
-salam();
-require('cobaIncReq.php');
+function salam()
+{
+	global $nama;
+	echo ("<br> Hallo Nama Saya Adalah " . $nama);
+}
